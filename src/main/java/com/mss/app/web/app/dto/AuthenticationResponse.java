@@ -1,0 +1,15 @@
+package com.mss.app.web.app.dto;
+
+import com.mss.app.web.app.enums.UserRole;
+
+import lombok.Data;
+
+
+@Data
+public class AuthenticationResponse {
+
+	private String jwt;
+	private UserRole userRole;
+	private Long userId;
+
+}
